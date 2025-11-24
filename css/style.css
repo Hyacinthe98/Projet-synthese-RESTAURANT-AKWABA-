@@ -1,0 +1,23 @@
+body {
+  font-family: "Anek Bangla", sans-serif;
+}
+.social-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  padding: 35px;
+}
+.hero-section {
+  background: #d50000;
+  overflow: hidden;
+}
+
+.main-chef {
+  max-height: 500px;
+  position: relative;
+  z-index: 5;
+}
