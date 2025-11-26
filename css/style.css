@@ -21,3 +21,9 @@ body {
   position: relative;
   z-index: 5;
 }
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #000 !important;
+  background-color: var(--bs-warning);
+  border-radius: 30%;
+}
