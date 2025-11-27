@@ -27,3 +27,30 @@ body {
   background-color: var(--bs-warning);
   border-radius: 30%;
 }
+
+.avis-clients {
+  background: #d50000 !important;
+}
+
+.carte-avis {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-avis:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.bordure-rouge {
+  border: 2px solid #db0000;
+  border-radius: 15px;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #db0000;
+  background: #ffecec;
+  box-shadow: none;
+}
