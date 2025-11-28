@@ -54,3 +54,20 @@ body {
   background: #ffecec;
   box-shadow: none;
 }
+
+.card :hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.btn-reservation {
+  transition: all 0.3s ease;
+}
+
+.btn-reservation:hover {
+  transform: scale(1.05);
+  background-color: #e6b52d;
+  color: white;
+}
