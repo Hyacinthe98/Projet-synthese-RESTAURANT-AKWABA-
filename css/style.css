@@ -1,0 +1,56 @@
+body {
+  font-family: "Anek Bangla", sans-serif;
+}
+.social-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  padding: 35px;
+}
+.hero-section {
+  background: #d50000;
+  overflow: hidden;
+}
+
+.main-chef {
+  max-height: 500px;
+  position: relative;
+  z-index: 5;
+}
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #000 !important;
+  background-color: var(--bs-warning);
+  border-radius: 30%;
+}
+
+.avis-clients {
+  background: #d50000 !important;
+}
+
+.carte-avis {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-avis:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.bordure-rouge {
+  border: 2px solid #db0000;
+  border-radius: 15px;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #db0000;
+  background: #ffecec;
+  box-shadow: none;
+}
