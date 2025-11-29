@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nos Plats d’Afrique-Akwaba</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav
+        class="container d-flex align-items-center justify-content-between py-3"
+      >
+        <!-- NAV BAR  MENU-->
+        <div>
+          <img src="images/LOGO PNG.png" alt="Akwaba logo" height="40" />
+        </div>
+
+        <ul class="nav d-none d-sm-flex gap-3 m-0">
+          <li>
+            <a href="index.html" class="nav-link px-2 text-danger">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link px-2 text-danger dropdown-toggle"
+              id="specialitesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Nos Spécialités
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="specialitesDropdown">
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  href="specialites-plats.html"
+                  >Plats d’Afrique</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  href="specialites-boissons.html"
+                  >Boissons Africaines</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="apropos.html" class="nav-link px-2 text-danger"
+              >À Propos</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link px-2 text-danger">Contact</a>
+          </li>
+        </ul>
+
+        <a
+          href="https://order.tbdine.com/akwaba?src=3"
+          target="_blank"
+          class="btn btn-danger d-none d-sm-inline-block rounded-pill px-4 btn-reservation"
+          >Faire une Reservation</a
+        >
+
+        <button
+          class="btn btn-danger d-sm-none"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#menuModal"
+          aria-label="Ouvrir le menu"
+        >
+          &#9776;
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- MENU MODAL -->
+      <div
+        class="modal fade"
+        id="menuModal"
+        tabindex="-1"
+        aria-labelledby="menuModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-danger fw-bold" id="menuModalLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fermer"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled mb-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="specialites-plats.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Nos Spécialités</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="apropos.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >À Propos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="https://order.tbdine.com/akwaba?src=3"
+                target="_blank"
+                class="btn btn-danger w-100 rounded-pill"
+                >Faire une Reservation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION TITRE -->
+      <section class="avis-clients py-5 text-center bg-danger text-white">
+        <div class="container">
+          <h2 class="fw-bold mb-3">
+            Plats d’Afrique – Les Saveurs Authentiques du Continent
+          </h2>
+          <p class="text-white mb-2">
+            Découvrez nos plats africains traditionnels, préparés avec passion
+            et respect des recettes d’origine.<br />  Chez Akwaba, nous mettons
+            en avant la richesse culinaire de l’Afrique : des plats mijotés,
+            parfumés, généreux et remplis d’histoire.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION PLATS  -->
+      <section class="py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-4 text-danger">
+            Une cuisine riche, colorée et pleine d’âme
+          </h2>
+
+          <div class="row justify-content-center g-4">
+            <!-- Plat 1 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/attiekee.png"
+                  class="card-img-top rounded-top-4"
+                  alt="Attieke"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">Attieke - 12.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+
+            <!-- Plat 2 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/Kédjénou.png"
+                  class="card-img-top rounded-top-4"
+                  alt="Kédjénou"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">Kédjénou - 38.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+
+            <!-- Plat 3 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/alloko.png"
+                  class="card-img-top rounded-top-4"
+                  alt="Alloko"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">Alloko - 12.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 4 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/yassa poulet.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="yassa poulet"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">yassa poulet - 30.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 5 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/mafe.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="mafe"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">mafe - 31.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 6 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/souvlakid.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="souvlaki"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">souvlaki - 24.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 7 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/okok.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="okok"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">okok - 22.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 8 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/pll.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="placali"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">Placali - 32.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+            <!-- Plat 9 -->
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="images/Repas/bouillon.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="bouillon"
+                />
+                <div class="card-body bg-warning text-dark rounded-bottom-4">
+                  <h5 class="m-0 fw-semibold">bouillon - 22.95$</h5>
+                </div>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://order.tbdine.com/akwaba?src=3"
+                  target="_blank"
+                  class="btn btn-danger px-4 py-2 fw-semibold rounded-pill btn-reservation"
+                >
+                  Faire une Reservation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-dark m-6">
+              Découvrez nos plats africains traditionnels, préparés avec passion
+              et respect des recettes d’origine.<br />  Chez Akwaba, nous
+              mettons en avant la richesse culinaire de l’Afrique : des plats
+              mijotés, parfumés, généreux et remplis d’histoire.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-warning text-dark py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <img
+              src="images/LOGO PNG.png"
+              alt="Akwaba logo"
+              height="40"
+              class="mb-3"
+            />
+            <p>
+              Chez Akwaba, nous misons sur la fraîcheur des ingrédients, des
+              vinaigrettes maison (à base d’huile d’olive extra vierge de
+              Kalamata), et des recettes qui racontent une histoire.
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a
+                href="https://www.facebook.com/RestaurantAkwaba/"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://tbdine.com/montreal/restaurants/akwaba"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Twitter.png" alt="Twitter"
+              /></a>
+              <a
+                href="https://www.instagram.com/restaurantakwaba/"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <a href="index.html" class="text-dark mb-2 text-decoration-none"
+              >Accueil</a
+            >
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link px-2 text-danger dropdown-toggle"
+                id="specialitesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nos Spécialités
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="specialitesDropdown">
+                <li>
+                  <a
+                    class="dropdown-item text-danger"
+                    href="specialites-plats.html"
+                    >Plats d’Afrique</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-danger"
+                    href="specialites-boissons.html"
+                    >Boissons Africaines</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <a href="apropos.html" class="text-dark mb-2 text-decoration-none"
+              >À Propos</a
+            >
+            <a href="contact.html" class="text-dark mb-2 text-decoration-none"
+              >Contact</a
+            >
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <p class="mb-1">
+              Adresse : 4541, rue Bélanger, Montréal, QC, H1T 1B7
+            </p>
+            <p class="fs-4 fw-bold mb-0">+1 (514) 507-1186</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
