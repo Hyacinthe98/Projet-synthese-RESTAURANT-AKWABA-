@@ -71,3 +71,12 @@ body {
   background-color: #e6b52d;
   color: white;
 }
+.equipe-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.equipe-card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
