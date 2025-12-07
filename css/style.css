@@ -31,6 +31,9 @@ body {
 .avis-clients {
   background: #d50000 !important;
 }
+.message {
+  background: #d50000 !important;
+}
 
 .carte-avis {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
