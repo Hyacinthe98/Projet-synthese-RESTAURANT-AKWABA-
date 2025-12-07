@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact-Akwaba</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav
+        class="container d-flex align-items-center justify-content-between py-3"
+      >
+        <!-- NAV BAR  MENU-->
+        <div>
+          <img src="images/LOGO PNG.png" alt="Akwaba logo" height="40" />
+        </div>
+
+        <ul class="nav d-none d-sm-flex gap-3 m-0">
+          <li>
+            <a href="index.html" class="nav-link px-2 text-danger">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link px-2 text-danger dropdown-toggle"
+              id="specialitesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Nos Spécialités
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="specialitesDropdown">
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  href="specialites-plats.html"
+                  >Plats d’Afrique</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  href="specialites-boissons.html"
+                  >Boissons Africaines</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="apropos.html" class="nav-link px-2 text-danger"
+              >À Propos</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link px-2 text-danger">Contact</a>
+          </li>
+        </ul>
+
+        <a
+          href="https://order.tbdine.com/akwaba?src=3"
+          target="_blank"
+          class="btn btn-danger d-none d-sm-inline-block rounded-pill px-4"
+          >Faire une Reservation</a
+        >
+
+        <button
+          class="btn btn-danger d-sm-none"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#menuModal"
+          aria-label="Ouvrir le menu"
+        >
+          &#9776;
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- MENU MODAL -->
+      <div
+        class="modal fade"
+        id="menuModal"
+        tabindex="-1"
+        aria-labelledby="menuModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-danger fw-bold" id="menuModalLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fermer"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled mb-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Nos Spécialités</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="apropos.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >À Propos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-danger text-decoration-none fs-5 d-block mb-2"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="https://order.tbdine.com/akwaba?src=3"
+                target="_blank"
+                class="btn btn-danger w-100 rounded-pill"
+                >Faire une Reservation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!-- SECTION Envoyez-nous un message -->
+      <section class="message py-5 text-center bg-danger text-white">
+        <div class="container">
+          <h2 class="fw-bold mb-3">
+            Contactez Akwaba
+          </h2>
+          <p class="text-white mb-2">
+            Une question, une réservation ou une commande à préparer ?  L’équipe Akwaba est à votre écoute.  Contactez-nous directement ou passez au comptoir pour récupérer vos plats à emporter.
+          </p>
+        </div>
+      </section>
+
+<section class="container py-5">
+  <h2 class="text-danger fw-bold mb-4 text-center">Envoyez-nous un message</h2>
+
+  <form class="mx-auto p-4 rounded border border-danger bg-light" style="max-width: 600px;">
+    <div class="mb-3">
+      <label for="nom" class="form-label fw-semibold">Votre nom complet :</label>
+      <input type="text" id="nom" class="form-control" placeholder="Votre nom complet" />
+    </div>
+
+    <div class="mb-3">
+      <label for="telephone" class="form-label fw-semibold">Votre Numéro de téléphone :</label>
+      <input type="tel" id="telephone" class="form-control" placeholder="Votre numéro de téléphone" />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label fw-semibold">Adresse courriel :</label>
+      <input type="email" id="email" class="form-control" placeholder="Votre adresse courriel" />
+    </div>
+
+    <div class="mb-3">
+      <label for="repas" class="form-label fw-semibold">Quel repas souhaitez-vous ?</label>
+      <input type="text" id="repas" class="form-control" placeholder="Exemple : Couscous, Tajine..." />
+    </div>
+
+    <div class="mb-4">
+      <label for="description" class="form-label fw-semibold">Faites une description de votre commande :</label>
+      <textarea id="description" rows="4" class="form-control" placeholder="Détails supplémentaires"></textarea>
+    </div>
+
+   <div class="text-center">
+  <a href="confirmation.html" class="btn btn-danger rounded-pill px-4">Faire une Reservation</a>
+</div>
+  </form>
+</section>
+
+
+ <!-- SECTION Nos Coordonnées -->
+      <section class="Coordonnées py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold text-danger mb-3">Adresse</h2>
+
+          <p class="fw-semibold mb-1">
+            ---------------- 📍 4541 rue Bélanger, Montréal, H1T 1B7 ----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ---------------- Téléphone  📞 (514) 507-1186----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ----------------Courriel ✉️ info@akwaba.ca ----------------
+          </p>
+          
+        </div>
+      </section>
+
+       <!-- SECTION NOS HORAIRES -->
+      <section class="horaires py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold text-danger mb-3">Nos horaires d’ouverture</h2>
+
+          <p class="fw-semibold mb-1">
+            ---------------- Lundi : 12 h à 22 h ----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ---------------- Mardi : 12 h à 22 h----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ---------------- Mercredi : 13 h à 22 h ----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ---------------- Jeudi : 12 h à 22 h ----------------
+          </p>
+          <p class="fw-semibold mb-1">
+            ---------------- Vendredi / Samedi : 12 h à 23 h ----------------
+          </p>
+          <p class="fw-semibold">
+            ---------------- Dimanche : 12 h à 23 h ----------------
+          </p>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="bg-warning text-dark py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <img
+              src="images/LOGO PNG.png"
+              alt="Akwaba logo"
+              height="40"
+              class="mb-3"
+            />
+            <p>
+              Chez Akwaba, nous misons sur la fraîcheur des ingrédients, des
+              vinaigrettes maison (à base d’huile d’olive extra vierge de
+              Kalamata), et des recettes qui racontent une histoire.
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a
+                href="https://www.facebook.com/RestaurantAkwaba/"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Facebook.png" alt="Facebook"
+              /></a>
+              <a
+                href="https://tbdine.com/montreal/restaurants/akwaba"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Twitter.png" alt="Twitter"
+              /></a>
+              <a
+                href="https://www.instagram.com/restaurantakwaba/"
+                target="_blank"
+                class="social-btn"
+                ><img src="images/Instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <a href="index.html" class="text-dark mb-2 text-decoration-none"
+              >Accueil</a
+            >
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link px-2 text-danger dropdown-toggle"
+                id="specialitesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nos Spécialités
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="specialitesDropdown">
+                <li>
+                  <a
+                    class="dropdown-item text-danger"
+                    href="specialites-plats.html"
+                    >Plats d’Afrique</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-danger"
+                    href="specialites-boissons.html"
+                    >Boissons Africaines</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <a href="apropos.html" class="text-dark mb-2 text-decoration-none"
+              >À Propos</a
+            >
+            <a href="contact.html" class="text-dark mb-2 text-decoration-none"
+              >Contact</a
+            >
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <p class="mb-1">
+              Adresse : 4541, rue Bélanger, Montréal, QC, H1T 1B7
+            </p>
+            <p class="fs-4 fw-bold mb-0">+1 (514) 507-1186</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+  </body>
+</html>
