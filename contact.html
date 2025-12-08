@@ -167,35 +167,35 @@
 <section class="container py-5">
   <h2 class="text-danger fw-bold mb-4 text-center">Envoyez-nous un message</h2>
 
-  <form class="mx-auto p-4 rounded border border-danger bg-light" style="max-width: 600px;">
+<form action="confirmation.html" method="post" class="mx-auto p-4 rounded border border-danger bg-light" >
     <div class="mb-3">
       <label for="nom" class="form-label fw-semibold">Votre nom complet :</label>
-      <input type="text" id="nom" class="form-control" placeholder="Votre nom complet" />
+      <input type="text" id="nom" class="form-control" placeholder="Votre nom complet" required/>
     </div>
 
     <div class="mb-3">
       <label for="telephone" class="form-label fw-semibold">Votre Numéro de téléphone :</label>
-      <input type="tel" id="telephone" class="form-control" placeholder="Votre numéro de téléphone" />
+      <input type="tel" id="telephone" class="form-control" placeholder="Votre numéro de téléphone" required/>
     </div>
 
     <div class="mb-3">
       <label for="email" class="form-label fw-semibold">Adresse courriel :</label>
-      <input type="email" id="email" class="form-control" placeholder="Votre adresse courriel" />
+      <input type="email" id="email" class="form-control" placeholder="Votre adresse courriel"required/>
     </div>
 
     <div class="mb-3">
       <label for="repas" class="form-label fw-semibold">Quel repas souhaitez-vous ?</label>
-      <input type="text" id="repas" class="form-control" placeholder="Exemple : Couscous, Tajine..." />
+      <input type="text" id="repas" class="form-control" placeholder="Exemple : Couscous, Tajine..." required/>
     </div>
 
     <div class="mb-4">
       <label for="description" class="form-label fw-semibold">Faites une description de votre commande :</label>
-      <textarea id="description" rows="4" class="form-control" placeholder="Détails supplémentaires"></textarea>
+      <textarea id="description" rows="4" class="form-control" placeholder="Détails supplémentaires"required></textarea>
     </div>
 
-   <div class="text-center">
-  <a href="confirmation.html" class="btn btn-danger rounded-pill px-4">Faire une Reservation</a>
-</div>
+ <div class="text-center">
+    <button type="submit" class="btn btn-danger rounded-pill px-4">Faire une Reservation</button>
+  </div>
   </form>
 </section>
 
